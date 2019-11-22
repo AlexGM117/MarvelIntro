@@ -1,11 +1,10 @@
 package com.example.fintonictest
 
-class ApiRepository : BaseRepository() {
+class ApiRepository(var service: ApiService) : BaseRepository() {
 
     suspend fun makeRequest() : ListResponse? {
         return safeApiCall(
-            call = {ApiClient.getInstance().getArchiveHeroes().await()},
-            errorMessage = "Por el momento el servicio no esta disponible."
-            )
+            call = {service.getArchiveHeroes().await()},
+            errorMessage = "Por el momento el servicio no esta disponible.")
     }
 }

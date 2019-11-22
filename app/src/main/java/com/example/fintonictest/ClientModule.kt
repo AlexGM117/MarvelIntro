@@ -19,7 +19,7 @@ class ClientModule {
 
     @Provides
     @Singleton
-    fun provideApiManager(retrofit: Retrofit) : ApiService {
+    fun provideApiService(retrofit: Retrofit) : ApiService {
         return retrofit.create(ApiService::class.java)
     }
 
@@ -59,7 +59,7 @@ class ClientModule {
 
     @Provides
     @Singleton
-    fun provideCoroutinesAdapterFactory() : CoroutineCallAdapterFactory {
+    fun provideCoroutinesAdapterFactory() : CallAdapter.Factory {
         return CoroutineCallAdapterFactory()
     }
 
