@@ -1,5 +1,6 @@
-package com.example.fintonictest
+package com.example.fintonictest.domain
 
+import com.example.fintonictest.domain.client.ApiService
 import com.google.gson.Gson
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module

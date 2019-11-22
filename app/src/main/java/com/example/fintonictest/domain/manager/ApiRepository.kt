@@ -1,4 +1,7 @@
-package com.example.fintonictest
+package com.example.fintonictest.domain.manager
+
+import com.example.fintonictest.domain.client.ApiService
+import com.example.fintonictest.domain.client.model.response.ListResponse
 
 class ApiRepository(var service: ApiService) : BaseRepository() {
 

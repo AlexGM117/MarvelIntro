@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Marvel Wiki</string>
+    <string name="char_alias">Secret Identity: %1$s</string>
+    <string name="char_height">Height: %1$s</string>
+    <string name="char_power">Poderes: %1$s</string>
+    <string name="char_abilities">Abilities: %1$s</string>
+    <string name="char_groups">Teaming Up: %1$s</string>
 </resources>

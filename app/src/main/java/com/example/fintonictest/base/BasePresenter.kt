@@ -1,6 +1,7 @@
-package com.example.fintonictest
+package com.example.fintonictest.base
 
-abstract class BasePresenter<T: BaseViewInt> : BasePresenterInt<T> {
+abstract class BasePresenter<T: BaseViewInt> :
+    BasePresenterInt<T> {
 
     protected var view: T? = null
     protected var baseView: BaseViewInt? = null

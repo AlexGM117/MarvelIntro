@@ -1,6 +1,8 @@
-package com.example.fintonictest
+package com.example.fintonictest.characters
 
-import androidx.lifecycle.LiveData
+import com.example.fintonictest.base.BasePresenterInt
+import com.example.fintonictest.base.BaseViewInt
+import com.example.fintonictest.domain.client.model.Superhero
 
 interface MainContract {
     interface View : BaseViewInt {

@@ -1,4 +1,4 @@
-package com.example.fintonictest
+package com.example.fintonictest.domain.client.model
 
 data class Superhero(
     val name: String,

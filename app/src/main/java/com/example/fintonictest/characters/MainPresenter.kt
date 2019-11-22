@@ -1,10 +1,13 @@
-package com.example.fintonictest
+package com.example.fintonictest.characters
 
+import com.example.fintonictest.base.BasePresenter
+import com.example.fintonictest.domain.manager.ApiRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
-class MainPresenter(val repository: ApiRepository) : BasePresenter<MainContract.View>(), MainContract.Presenter {
+class MainPresenter(val repository: ApiRepository) : BasePresenter<MainContract.View>(),
+    MainContract.Presenter {
 
 //    @Inject
 //    lateinit var repository: ApiRepository
@@ -17,7 +20,7 @@ class MainPresenter(val repository: ApiRepository) : BasePresenter<MainContract.
                     view?.setData2Adapter(data.superheroes)
                 }
             } else {
-                view?.showErrorDialog("Ocurrio un error")
+                view?.showErrorDialog("Ocurrio un error al obtener los datos")
             }
         }
     }

@@ -1,5 +1,7 @@
 package com.example.fintonictest
 
+import com.example.fintonictest.activity.MainActivity
+import com.example.fintonictest.domain.ClientModule
 import dagger.Component
 import javax.inject.Singleton
 
